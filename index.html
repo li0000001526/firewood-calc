@@ -119,6 +119,21 @@
   .fact-list li{padding:10px 0;border-bottom:1px dashed var(--line);font-size:13.5px;line-height:1.7;color:var(--text)}
   .fact-list li:last-child{border-bottom:none}
   .fact-list li b{color:var(--ember2)}
+
+  /* seo / FAQ panel */
+  section.seo{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:22px 24px;margin-top:18px}
+  section.seo h2{font-size:15px;font-weight:800;color:var(--text);letter-spacing:.4px;margin:0 0 6px;display:flex;align-items:center;gap:9px}
+  section.seo h2::before{content:"";width:22px;height:3px;background:linear-gradient(90deg,var(--ember),var(--ember2));border-radius:2px;flex:0 0 auto}
+  section.seo h3{font-size:14px;font-weight:700;color:var(--ember2);margin:16px 0 6px;letter-spacing:.2px}
+  section.seo p{font-size:13.5px;color:var(--muted);line-height:1.85;margin:0}
+  section.seo p b{color:var(--flame)}
+  section.seo .seo-links{list-style:none;padding:0;margin:12px 0 4px}
+  section.seo .seo-links li{font-size:13px;color:var(--muted);padding:6px 0;line-height:1.6;border-bottom:1px dashed var(--line)}
+  section.seo .seo-links li:last-child{border-bottom:none}
+  section.seo a{color:var(--ember);text-decoration:none}
+  section.seo a:hover{color:var(--flame);text-decoration:underline}
+  section.seo .seo-friend{margin-top:14px;padding-top:12px;border-top:1px dashed var(--line);font-size:12.5px;color:var(--muted);line-height:1.8}
+  section.seo .seo-fine{margin-top:10px;font-size:11.5px;color:var(--muted);opacity:.75}
 </style>
 </head>
 <body>
@@ -251,12 +266,6 @@
     </ul>
   </div>
 </div>
-<footer id="footer" data-i18n="footer">
-    篝火燃料估算计算器<br>
-    建议搭配防水袋与干燥存放 · 遵守当地营地用火规定
-  </footer>
-</div>
-
 
 <section class="seo">
   <h2 data-i18n-html="seo.h1">露营篝火用柴指南与常见问题</h2>
@@ -280,6 +289,12 @@
   <div class="seo-friend" data-i18n-html="seo.friend">更多在线工具：<a href="https://li00000.xyz/" target="_blank" rel="noopener">在线 PS 修图</a> · <a href="https://tools.li00000.xyz/" target="_blank" rel="noopener">工具站</a> · <a href="https://tjtkw.li00000.xyz/" target="_blank" rel="noopener">健身体脂计算器</a> · <a href="https://blog.li00000.xyz/" target="_blank" rel="noopener">养老生活博客</a></div>
   <p class="seo-fine" data-i18n-html="seo.fine">本页估算基于通用经验系数，仅供露营筹备参考；营地用火请遵守当地规定。</p>
 </section>
+
+  <footer id="footer" data-i18n="footer">
+    篝火燃料估算计算器<br>
+    建议搭配防水袋与干燥存放 · 遵守当地营地用火规定
+  </footer>
+</div>
 
 <script>
 (function(){
